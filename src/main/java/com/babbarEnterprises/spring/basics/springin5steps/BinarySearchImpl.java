@@ -17,6 +17,6 @@ public class BinarySearchImpl {
 //        BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
         int[] sortedNumbers= sortAlgorithm.sort(numbers);
         System.out.println(sortAlgorithm);
-        return -3;
+        return -1;
     }
 }
