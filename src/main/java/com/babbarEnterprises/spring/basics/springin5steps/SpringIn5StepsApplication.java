@@ -9,13 +9,11 @@ public class SpringIn5StepsApplication {
 
 	public static void main(String[] args) {
 
-
 //		System.out.println(result);
-        ApplicationContext applicationContext = SpringApplication.run(SpringIn5StepsApplication.class, args);
-        BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
-        int result = binarySearch.binarySearch(new int[]{123,5,2},3);
-        System.out.println(result);
-    }
+		ApplicationContext applicationContext = SpringApplication.run(SpringIn5StepsApplication.class, args);
+		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
+		int result = binarySearch.binarySearch(new int[] { 123, 5, 2 }, 3);
+		System.out.println(result);
+	}
 
 }
-
