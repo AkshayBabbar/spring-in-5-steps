@@ -9,7 +9,6 @@ public class BinarySearchImpl {
     private SortAlgorithm sortAlgorithm;
 
     public int binarySearch(int[] numbers, int numberToSearchFor){
-//        BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
         int[] sortedNumbers= sortAlgorithm.sort(numbers);
         System.out.println(sortAlgorithm);
         return 12;
