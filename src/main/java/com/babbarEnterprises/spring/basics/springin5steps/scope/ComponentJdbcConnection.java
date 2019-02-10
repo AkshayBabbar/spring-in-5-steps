@@ -5,12 +5,10 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
-import java.nio.file.SecureDirectoryStream;
-
 @Component
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE,proxyMode = ScopedProxyMode.TARGET_CLASS)
-public class JdbcConnection {
-    public JdbcConnection() {
+public class ComponentJdbcConnection {
+    public ComponentJdbcConnection() {
         System.out.println("JDBC CONNECTION");
     }
 }
