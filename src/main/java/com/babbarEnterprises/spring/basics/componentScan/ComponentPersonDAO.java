@@ -1,4 +1,4 @@
-package com.babbarEnterprises.spring.basics.springin5steps.scope;
+package com.babbarEnterprises.spring.basics.componentScan;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -6,13 +6,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class ComponentPersonDAO {
     @Autowired
-    JdbcConnection jdbcConnection;
+    ComponentJdbcConnection jdbcConnection;
 
-    public JdbcConnection getJdbcConnection() {
+    public ComponentJdbcConnection getJdbcConnection() {
         return jdbcConnection;
     }
 
-    public void setJdbcConnection(JdbcConnection jdbcConnection) {
+    public void setJdbcConnection(ComponentJdbcConnection jdbcConnection) {
         this.jdbcConnection = jdbcConnection;
     }
 }

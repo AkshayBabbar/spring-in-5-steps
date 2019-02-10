@@ -1,4 +1,4 @@
-package com.babbarEnterprises.spring.basics.springin5steps.scope;
+package com.babbarEnterprises.spring.basics.componentScan;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
