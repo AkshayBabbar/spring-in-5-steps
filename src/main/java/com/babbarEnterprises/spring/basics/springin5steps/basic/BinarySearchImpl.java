@@ -13,6 +13,7 @@ import javax.annotation.PreDestroy;
 
 
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+@Component
 public class BinarySearchImpl {
 
     private Logger LOGGER = LoggerFactory.getLogger(this.getClass());
