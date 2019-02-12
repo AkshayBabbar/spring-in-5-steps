@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component
-@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class BinarySearchImpl {
 
     private Logger LOGGER = LoggerFactory.getLogger(this.getClass());
