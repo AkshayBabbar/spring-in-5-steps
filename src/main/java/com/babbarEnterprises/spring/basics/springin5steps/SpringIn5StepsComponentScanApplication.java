@@ -17,15 +17,11 @@ public class SpringIn5StepsComponentScanApplication {
     private static Logger LOGGER = LoggerFactory.getLogger(SpringIn5StepsComponentScanApplication.class);
 //    (SpringIn5StepsBasicScopeApplication.class);
     public static void main(String[] args) {
-        ApplicationContext applicationContext =
-                new AnnotationConfigApplicationContext(SpringIn5StepsBasicApplication.class);
-        ComponentPersonDAO personDAO = applicationContext.getBean(ComponentPersonDAO.class);
-        ComponentPersonDAO personDAO1 = applicationContext.getBean(ComponentPersonDAO.class);
+        try (AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(
+                SpringIn5StepsComponentScanApplication.class)) {
+            ComponentPersonDAO componentDAO = applicationContext.getBean(ComponentPersonDAO.class);
 
-        LOGGER.info("{}",personDAO);
-        LOGGER.info("{}",personDAO.getJdbcConnection());
-
-        LOGGER.info("{}",personDAO1);
-        LOGGER.info("{}",personDAO1.getJdbcConnection());
+            LOGGER.info("{}", componentDAO);
+        }
     }
 }
